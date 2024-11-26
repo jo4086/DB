@@ -1,0 +1,9 @@
+DB 시작하기
+
+- 오라클 설치 (처음엔 오라클 배우고 나중에 SQL 사용)
+    => 오라클 관리자 패스워드 : sys1234
+- DBeaver 설치
+
+
+
+-SELECT [column1,column2...] FROM [TABLENAME] BY [columnName]
