@@ -31,7 +31,7 @@
     </thead>
     <tbody>
         <tr>
-            <td rowspan="4">
+            <td rowspan="4" style="text-align: center">
                 DML (데이터 조작)
             </td>
             <td >
@@ -54,7 +54,7 @@
             </td>
         </tr>
         <tr>
-            <td rowspan="3">
+            <td rowspan="3" style="text-align: center">
                 DDL (테이블 객체 조작)
             </td>
             <td >
@@ -72,7 +72,7 @@
             </td>
         </tr>
                 <tr>
-            <td rowspan="2">
+            <td rowspan="2" style="text-align: center">
                 TCL (트랙잭션 처리)
             </td>
             <td >
@@ -87,16 +87,17 @@
     </tbody>
 </table>
 
-<!-- <table>
-  <tr>
-    <th colspan="2">DML (데이터 조작)</th>
-  </tr>
-  <tr>
-    <td>유형</td>
-    <td>명령문</td>
-  </tr>
-  <tr>
-    <td>SELECT</td>
-    <td>데이터 검색</td>
-  </tr>
-</table> -->
+`ALTER 문법`
+
+-  컬럼을 추가하거나 삭제
+-  컬럼의 속성 변경
+
+> 컬럼 추가\
+> **ALTER TABLE** [테이블명] **ADD** [컬럼명] [컬럼 TYPE];
+>
+> 컬럼 속성 변경\
+> **ALTER TABLE** [테이블명] **MODIFY** [컬럼명 1] [컬럼 TYPE], [컬럼명 2] [컬럼 TYPE];\
+> **ALTER TABLE** [테이블명] **MODIFY** ([컬럼명 1] [컬럼 TYPE] [DEFAULT] [NOT NULL], [컬럼명 1] [컬럼 TYPE] [DEFAULT] [NONE NOT NULL]);\
+> **ALTER TABLE** [테이블명] **MODIFY** ([컬럼명 1] [컬럼 TYPE]);
+>
+> **ALTER TABLE** [테이블명] **ADD** [컬럼명] [컬럼 TYPE];
