@@ -53,6 +53,37 @@
                 DELETE (데이터 삭제)
             </td>
         </tr>
+        <tr>
+            <td rowspan="3">
+                DDL (테이블 객체 조작)
+            </td>
+            <td >
+                CREATE (DB 생성)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ALTER (DB 변경)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                DROP (DB 삭제)
+            </td>
+        </tr>
+                <tr>
+            <td rowspan="2">
+                TCL (트랙잭션 처리)
+            </td>
+            <td >
+                COMMIT (트랜잭션의 정상적인 종료처리)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ROLLBACK(트랜잭션 취소)
+            </td>
+        </tr>
     </tbody>
 </table>
 
