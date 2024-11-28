@@ -47,3 +47,49 @@
 --문제21. emp테이블 에서 (BLAKE와 같은 부서)에 있는 사원들의 이름과 입사일을 구하는데 BLAKE는 제외하고 출력하시오.(BLAKE가 여러명일 수 있음
 
 
+
+`INSERT INTO employees VALUES
+        ( 144
+        , 'Peter'
+        , 'Vargas'
+        , 'PVARGAS'
+        , '650.121.2004'
+        , TO_DATE('09-JUL-1998', 'dd-MM-yyyy')
+        , 'ST_CLERK'
+        , 2500
+        , NULL
+        , 124
+        , 50
+        );
+`
+
+`INSERT INTO employees VALUES
+        ( 201
+        , 'Michael'
+        , 'Hartstein'
+        , 'MHARTSTE'
+        , '515.123.5555'
+        , TO_DATE('17-FEB-1996', 'dd-MM-yyyy')
+        , 'MK_MAN'
+        , 13000
+        , NULL
+        , 100
+        , 20
+        );
+`
+
+`INSERT INTO employees VALUES
+        ( 107
+        , 'Diana'
+        , 'Lorentz'
+        , 'DLORENTZ'
+        , '590.423.5567'
+        , TO_DATE('07-FEB-1999', 'dd-MM-yyyy')
+        , 'IT_PROG'
+        , 4200
+        , NULL
+        , 103
+        , 60
+        );
+
+`
