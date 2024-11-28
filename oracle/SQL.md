@@ -18,31 +18,45 @@
    -  DB에 저장된 데이터를 조작하기 위한 언어
    -  데이터를 검색, 추가, 수정, 삭제
 
-|       유형        | 명령문               |
+<!-- |       유형        | 명령문               |
 | :---------------: | :------------------- |
-| DML (데이터 조작) | SELECT (데이터 검색) |
+| DML (데이터 조작) | SELECT (데이터 검색) | -->
 
 <table>
     <thead style="text-align: center">
         <tr>
             <th>유형</th>
-            <th>명령문</th>
+            <th style="width:200px;">명령문</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <th style="text-align: center">유형</th>
-            <th  style="text-align: center">명령문</th>
+            <td rowspan="4">
+                DML (데이터 조작)
+            </td>
+            <td >
+                SELECT(데이터 검색)
+            </td>
         </tr>
         <tr>
             <td>
-                DML (데이터조작)
+                INSERT(데이터 입력)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                UPDATE(데이터 수정)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                DELETE (데이터 삭제)
             </td>
         </tr>
     </tbody>
 </table>
 
-<table>
+<!-- <table>
   <tr>
     <th colspan="2">DML (데이터 조작)</th>
   </tr>
@@ -54,4 +68,4 @@
     <td>SELECT</td>
     <td>데이터 검색</td>
   </tr>
-</table>
+</table> -->
