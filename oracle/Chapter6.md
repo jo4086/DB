@@ -24,4 +24,4 @@
 6. DEFAULT
 
 
-## 2. 트랜잭션 (TCL - Transction Control Language) [(<span style="font-size:0.8em;">목차 돌아가기</span>)](#목차)
+## 2. 트랜잭션 (TCL - Transction Control Language) [(<span style="font-size:0.5em;">목차 돌아가기</span>)](#목차)
