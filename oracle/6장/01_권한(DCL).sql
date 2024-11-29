@@ -1,0 +1,165 @@
+-- 권한 (DCL)
+
+-- 계정 생성
+CREATE USER person IDENTIFIED BY person1234; -- 계정 (스키마) 생성
+GRANT CONNECT, RESOURCE, DBA TO person;  -- 권한 부여
+ALTER USER person IDENTIFIED BY person5678; -- 비밀번호 변경
+DROP USER person; -- 계정삭제
+
+-- ★TCL 트랜잭션 (중요),, 쪼개질 수 없는 처리 단위 (취소 = 롤백, 결제 = 커밋)
+
+
+CREATE TABLE PAYMENT(
+	NO NUMBER PRIMARY KEY,
+	NAME VARCHAR2(20), -- 결제자 이름
+	PAY NUMBER -- 금액
+);
+
+-- 재고 테이블
+CREATE TABLE STOCK(
+	NO NUMBER PRIMARY KEY,
+	STOCK_NAME VARCHAR2(100), -- 상품명
+	STOCK_COUNT NUMBER -- 재고 수
+);
+
+INSERT INTO STOCK VALUES(1,'티셔츠',1);
+
+SELECT * FROM STOCK;
+SELECT * FROM PAYMENT;
+
+-- 결제 상황 진행
+INSERT INTO PAYMENT VALUES(5, '철수',30000); -- 결제
+UPDATE STOCK SET STOCK_COUNT = 0 WHERE NO =1;
+COMMIT;
+
+INSERT INTO PAYMENT VALUES(5, '미희',30000); -- 미희
+UPDATE STOCK SET STOCK_COUNT = -1 WHERE NO -1;
+ROLLBACK;
+
+DELETE FROM PAYMENT WHERE NO = 2;
+
+UPDATE STOCK SET STOCK_COUNT = 0 WHERE NO = 1;
+COMMIT;
+
+
+CREATE TABLE SAMPLE(
+	NO NUMBER PRIMARY KEY,
+	NAME VARCHAR2(20),
+	AGE NUMBER
+);
+
+INSERT ALL
+	INTO SAMPLE VALUES(1, '양지은',10)
+	INTO SAMPLE VALUES(2, '박우진',10)
+	INTO SAMPLE VALUES(3, '김태온',10)
+SELECT * FROM DUAL;
+
+-- 10, 11만 AGE의 값으로 올 수 있다.
+-- CHECK(AGE IN(10,11)) <-- 제약조건 속성
+ALTER TABLE SAMPLE MODIFY AGE NUMBER CHECK(AGE IN(10,11));
+
+-- SQL Error [2290] [23000]: ORA-02290: check constraint (TEST.SYS_C007221) violated
+-- 제약조건에 걸림
+INSERT INTO SAMPLE VALUES(4, '정지우',12);
+
+SELECT * FROM SAMPLE;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

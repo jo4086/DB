@@ -109,7 +109,105 @@ FROM EMP
 WHERE ENAME LIKE 'A%';
 	
 --문제13. 모든 사원의 이름, 부서번호, 부서이름을 표시하시오. (emp, dept)
-SELECT 
+SELECT * FROM EMP;
+SELECT * FROM DEPT;
+
+SELECT ENAME AS "성함", T1.DEPTNO AS "부서번호", DNAME AS "부서명"
+FROM DEPT T1, EMP T2
+WHERE T1.DEPTNO = T2.DEPTNO;
+
+SELECT ENAME AS "성함", DEPTNO AS "부서번호", DNAME AS "부서명"
+FROM DEPT T1
+NATURAL JOIN EMP T2;
+
+--문제14. 업무가 MANAGER인 사원의 정보를
+--이름, 업무, 부서명, 근무지 순으로 출력하시오. ( emp, dept)
+
+SELECT
+	ENAME AS "이름",
+	JOB AS "업무",
+	DNAME AS "부서명",
+	LOC AS "지역"
+FROM EMP T1
+NATURAL JOIN DEPT T2
+WHERE JOB = 'MANAGER';
+
+--문제15. 커미션(emp테이블의 comm 컬럼이용)을 받고
+--급여가 1,600이상인 사원의
+--사원이름, 부서명, 근무지를 출력하시오.( emp, dept)
+SELECT * FROM EMP;
+
+SELECT
+	ENAME AS "이름",
+	DNAME AS "부서명",
+	LOC AS "근무지"
+FROM EMP T1
+NATURAL JOIN DEPT T2
+WHERE SAL >= 1600;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
