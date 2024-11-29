@@ -4,7 +4,7 @@
 
 ### 1. 권한 (DLC)
 
-1. CREATE USER ~ IDENTIFIED BY ~;
+1. CREATE USER ~ IDENTIFIED BY ~
 2. ALTER USER ~ IDENTIFIED BY ~
 3. DROP USER ~
 4. GRANT CONNECT, ~ TO ~
@@ -22,3 +22,6 @@
 4. FOREIGN KEY
 5. CHECH
 6. DEFAULT
+
+
+## 2. 트랜잭션 (TCL - Transction Control Language) [(<span style="font-size:0.8em;">목차 돌아가기</span>)](#목차)
