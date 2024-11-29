@@ -4,7 +4,15 @@
 
 ### 1. 권한 (DLC)
 
+1. CREATE USER ~ IDENTIFIED BY ~;
+2. ALTER USER ~ IDENTIFIED BY ~
+3. DROP USER ~
+4. GRANT CONNECT, ~ TO ~
+
 ### 2. 트랜잭션 (TCL)
+
+1. COMMIT
+2. ROLLBACK
 
 ### 3. 제약조건
 
