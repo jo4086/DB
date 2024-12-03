@@ -407,7 +407,7 @@ INSERT INTO employees VALUES
         , 'King'
         , 'SKING'
         , '515.123.4567'
-        , TO_DATE('17-06-1987', 'dd-MM-yyyy')
+        , TO_DATE('17-JUN-1987', 'dd-MON-yyyy')
         , 'AD_PRES'
         , 24000
         , NULL
@@ -421,7 +421,7 @@ INSERT INTO employees VALUES
         , 'Kochhar'
         , 'NKOCHHAR'
         , '515.123.4568'
-        , TO_DATE('21-09-1989', 'dd-MM-yyyy')
+        , TO_DATE('21-SEP-1989', 'dd-MON-yyyy')
         , 'AD_VP'
         , 17000
         , NULL
@@ -435,7 +435,7 @@ INSERT INTO employees VALUES
         , 'De Haan'
         , 'LDEHAAN'
         , '515.123.4569'
-        , TO_DATE('13-01-1993', 'dd-MM-yyyy')
+        , TO_DATE('13-JAN-1993', 'dd-MON-yyyy')
         , 'AD_VP'
         , 17000
         , NULL
@@ -449,7 +449,7 @@ INSERT INTO employees VALUES
         , 'Hunold'
         , 'AHUNOLD'
         , '590.423.4567'
-        , TO_DATE('03-01-1990', 'dd-MM-yyyy')
+        , TO_DATE('03-JAN-1990', 'dd-MON-yyyy')
         , 'IT_PROG'
         , 9000
         , NULL
@@ -463,7 +463,7 @@ INSERT INTO employees VALUES
         , 'Ernst'
         , 'BERNST'
         , '590.423.4568'
-        , TO_DATE('21-05-1991', 'dd-MM-yyyy')
+        , TO_DATE('21-MAY-1991', 'dd-MON-yyyy')
         , 'IT_PROG'
         , 6000
         , NULL
@@ -479,7 +479,7 @@ INSERT INTO employees VALUES
         , 'Lorentz'
         , 'DLORENTZ'
         , '590.423.5567'
-        , TO_DATE('07-02-1999', 'dd-MM-yyyy')
+        , TO_DATE('07-FEB-1999', 'dd-MON-yyyy')
         , 'IT_PROG'
         , 4200
         , NULL
@@ -494,7 +494,7 @@ INSERT INTO employees VALUES
         , 'Mourgos'
         , 'KMOURGOS'
         , '650.123.5234'
-        , TO_DATE('16-11-1999', 'dd-MM-yyyy')
+        , TO_DATE('16-NOV-1999', 'dd-MON-yyyy')
         , 'ST_MAN'
         , 5800
         , NULL
@@ -509,7 +509,7 @@ INSERT INTO employees VALUES
         , 'Rajs'
         , 'TRAJS'
         , '650.121.8009'
-        , TO_DATE('17-10-1995', 'dd-MM-yyyy')
+        , TO_DATE('17-OCT-1995', 'dd-MON-yyyy')
         , 'ST_CLERK'
         , 3500
         , NULL
@@ -523,7 +523,7 @@ INSERT INTO employees VALUES
         , 'Davies'
         , 'CDAVIES'
         , '650.121.2994'
-        , TO_DATE('29-01-1997', 'dd-MM-yyyy')
+        , TO_DATE('29-JAN-1997', 'dd-MON-yyyy')
         , 'ST_CLERK'
         , 3100
         , NULL
@@ -537,7 +537,7 @@ INSERT INTO employees VALUES
         , 'Matos'
         , 'RMATOS'
         , '650.121.2874'
-        , TO_DATE('15-03-1998', 'dd-MM-yyyy')
+        , TO_DATE('15-MAR-1998', 'dd-MON-yyyy')
         , 'ST_CLERK'
         , 2600
         , NULL
@@ -551,7 +551,7 @@ INSERT INTO employees VALUES
         , 'Vargas'
         , 'PVARGAS'
         , '650.121.2004'
-        , TO_DATE('09-07-1998', 'dd-MM-yyyy')
+        , TO_DATE('09-JUL-1998', 'dd-MON-yyyy')
         , 'ST_CLERK'
         , 2500
         , NULL
@@ -567,7 +567,7 @@ INSERT INTO employees VALUES
         , 'Zlotkey'
         , 'EZLOTKEY'
         , '011.44.1344.429018'
-        , TO_DATE('29-01-2000', 'dd-MM-yyyy')
+        , TO_DATE('29-JAN-2000', 'dd-MON-yyyy')
         , 'SA_MAN'
         , 10500
         , .2
@@ -582,7 +582,7 @@ INSERT INTO employees VALUES
         , 'Abel'
         , 'EABEL'
         , '011.44.1644.429267'
-        , TO_DATE('11-05-1996', 'dd-MM-yyyy')
+        , TO_DATE('11-MAY-1996', 'dd-MON-yyyy')
         , 'SA_REP'
         , 11000
         , .30
@@ -597,7 +597,7 @@ INSERT INTO employees VALUES
         , 'Taylor'
         , 'JTAYLOR'
         , '011.44.1644.429265'
-        , TO_DATE('24-03-1998', 'dd-MM-yyyy')
+        , TO_DATE('24-MAR-1998', 'dd-MON-yyyy')
         , 'SA_REP'
         , 8600
         , .20
@@ -612,7 +612,7 @@ INSERT INTO employees VALUES
         , 'Grant'
         , 'KGRANT'
         , '011.44.1644.429263'
-        , TO_DATE('24-05-1999', 'dd-MM-yyyy')
+        , TO_DATE('24-MAY-1999', 'dd-MON-yyyy')
         , 'SA_REP'
         , 7000
         , .15
@@ -627,7 +627,7 @@ INSERT INTO employees VALUES
         , 'Whalen'
         , 'JWHALEN'
         , '515.123.4444'
-        , TO_DATE('17-09-1987', 'dd-MM-yyyy')
+        , TO_DATE('17-SEP-1987', 'dd-MON-yyyy')
         , 'AD_ASST'
         , 4400
         , NULL
@@ -641,7 +641,7 @@ INSERT INTO employees VALUES
         , 'Hartstein'
         , 'MHARTSTE'
         , '515.123.5555'
-        , TO_DATE('17-02-1996', 'dd-MM-yyyy')
+        , TO_DATE('17-FEB-1996', 'dd-MON-yyyy')
         , 'MK_MAN'
         , 13000
         , NULL
@@ -655,7 +655,7 @@ INSERT INTO employees VALUES
         , 'Fay'
         , 'PFAY'
         , '603.123.6666'
-        , TO_DATE('17-08-1997', 'dd-MM-yyyy')
+        , TO_DATE('17-AUG-1997', 'dd-MON-yyyy')
         , 'MK_REP'
         , 6000
         , NULL
@@ -670,7 +670,7 @@ INSERT INTO employees VALUES
         , 'Higgins'
         , 'SHIGGINS'
         , '515.123.8080'
-        , TO_DATE('07-06-1994', 'dd-MM-yyyy')
+        , TO_DATE('07-JUN-1994', 'dd-MON-yyyy')
         , 'AC_MGR'
         , 12000
         , NULL
@@ -684,7 +684,7 @@ INSERT INTO employees VALUES
         , 'Gietz'
         , 'WGIETZ'
         , '515.123.8181'
-        , TO_DATE('07-06-1994', 'dd-MM-yyyy')
+        , TO_DATE('07-JUN-1994', 'dd-MON-yyyy')
         , 'AC_ACCOUNT'
         , 8300
         , NULL
@@ -713,61 +713,61 @@ values('F',25000, 40000);
 
 INSERT INTO job_history
 VALUES (102
-       , TO_DATE('13-01-1993', 'dd-MM-yyyy')
-       , TO_DATE('24-07-1998', 'dd-MM-yyyy')
+       , TO_DATE('13-JAN-1993', 'dd-MON-yyyy')
+       , TO_DATE('24-JUL-1998', 'dd-MON-yyyy')
        , 'IT_PROG'
        , 60);
 
 INSERT INTO job_history
 VALUES (101
-       , TO_DATE('21-09-1989', 'dd-MM-yyyy')
-       , TO_DATE('27-10-1993', 'dd-MM-yyyy')
+       , TO_DATE('21-SEP-1989', 'dd-MON-yyyy')
+       , TO_DATE('27-OCT-1993', 'dd-MON-yyyy')
        , 'AC_ACCOUNT'
        , 110);
 
 INSERT INTO job_history
 VALUES (101
-       , TO_DATE('28-10-1993', 'dd-MM-yyyy')
-       , TO_DATE('15-03-1997', 'dd-MM-yyyy')
+       , TO_DATE('28-OCT-1993', 'dd-MON-yyyy')
+       , TO_DATE('15-MAR-1997', 'dd-MON-yyyy')
        , 'AC_MGR'
        , 110);
 
 INSERT INTO job_history
 VALUES (201
-       , TO_DATE('17-02-1996', 'dd-MM-yyyy')
-       , TO_DATE('19-12-1999', 'dd-MM-yyyy')
+       , TO_DATE('17-FEB-1996', 'dd-MON-yyyy')
+       , TO_DATE('19-DEC-1999', 'dd-MON-yyyy')
        , 'MK_REP'
        , 20);
 
 
 INSERT INTO job_history
 VALUES  (200
-        , TO_DATE('17-09-1987', 'dd-MM-yyyy')
-        , TO_DATE('17-06-1993', 'dd-MM-yyyy')
+        , TO_DATE('17-SEP-1987', 'dd-MON-yyyy')
+        , TO_DATE('17-JUN-1993', 'dd-MON-yyyy')
         , 'AD_ASST'
         , 90
         );
 
 INSERT INTO job_history
 VALUES  (176
-        , TO_DATE('24-03-1998', 'dd-MM-yyyy')
-        , TO_DATE('31-12-1998', 'dd-MM-yyyy')
+        , TO_DATE('24-MAR-1998', 'dd-MON-yyyy')
+        , TO_DATE('31-DEC-1998', 'dd-MON-yyyy')
         , 'SA_REP'
         , 80
         );
 
 INSERT INTO job_history
 VALUES  (176
-        , TO_DATE('01-01-1999', 'dd-MM-yyyy')
-        , TO_DATE('31-12-1999', 'dd-MM-yyyy')
+        , TO_DATE('01-JAN-1999', 'dd-MON-yyyy')
+        , TO_DATE('31-DEC-1999', 'dd-MON-yyyy')
         , 'SA_MAN'
         , 80
         );
 
 INSERT INTO job_history
 VALUES  (200
-        , TO_DATE('01-07-1994', 'dd-MM-yyyy')
-        , TO_DATE('31-12-1998', 'dd-MM-yyyy')
+        , TO_DATE('01-JUL-1994', 'dd-MON-yyyy')
+        , TO_DATE('31-DEC-1998', 'dd-MON-yyyy')
         , 'AC_ACCOUNT'
         , 90
         );
@@ -866,7 +866,7 @@ COMMENT ON TABLE regions
 IS 'Regions table that contains region numbers and names. Contains 4 rows; references with the Countries table.'
 
 COMMENT ON COLUMN regions.region_id
-IS 'Pri03y key of regions table.'
+IS 'Primary key of regions table.'
 
 COMMENT ON COLUMN regions.region_name
 IS 'Names of regions. Locations are in the countries of these regions.'

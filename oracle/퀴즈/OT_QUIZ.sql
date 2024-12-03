@@ -145,44 +145,72 @@ FROM EMP T1
 NATURAL JOIN DEPT T2
 WHERE SAL >= 1600;
 
+--문제16. 근무지가 [CHICAGO]인 모든 사원의
+--1. 이름 2.업무 3.부서번호 4.부서이름을 표시하시오. ( emp, dept)
+SELECT * FROM DEPT;
+SELECT * FROM EMP;
 
+SELECT
+	ENAME AS "1.성함",
+	JOB AS "2. 업무",
+	DEPTNO AS "3. 업무번호",
+	DNAME AS "4. 부서명"
+FROM EMP T1
+NATURAL JOIN DEPT T2
+WHERE LOC = 'CHICAGO';
 
+--문제17. emp테이블 에서
+--사원번호가 7900인 사원과 [같은 날짜에 입사한 사람]의
+--1. 이름 2. 입사일을 출력하시오.
 
+SELECT ENAME AS "이름",
+HIREDATE AS "입사일"
+FROM EMP
+WHERE HIREDATE = (SELECT HIREDATE
+				FROM EMP
+				WHERE EMPNO = 7900);
+SELECT HIREDATE
+	FROM EMP
+	WHERE EMPNO = 7900;
 
+--문제18. emp테이블에서
+--직속상사(mgr)가 KING인 [모든 사원]의
+--1. 이름 / 2. 급여를 출력하시오.
+--SELECT * FROM EMP;
+SELECT ENAME AS "이름", SAL AS "급여"
+FROM EMP
+WHERE MGR = (SELECT EMPNO
+			FROM EMP
+			WHERE ENAME = 'KING');
+		
+--문제19. EMPLOYEES 테이블에서
+--(급여의 평균)보다 적은 사원의 정보를 
+--1.사원번호 / 2. 이름 / 3. 담당업무 / 4. 급여 / 5. 부서번호를 출력하여라
+SELECT * FROM EMPLOYEES;
 
+SELECT
+	EMPLOYEE_ID AS "1. 사원번호",
+	FIRST_NAME || ' ' || LAST_NAME AS "2. 이름",
+	JOB_ID AS "3. 담당업무",
+	SALARY AS "4. 급여",
+	DEPARTMENT_ID AS "5. 부서번호"	
+FROM EMPLOYEES
+WHERE SALARY < (SELECT AVG(SALARY) FROM EMPLOYEES);
 
+SELECT * FROM EMPLOYEES;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+--문제20. EMPLOYEES 테이블에서
+--(Kochhar의 급여)보다 [많은 사원]의 정보를
+--1. 사원번호 / 2.이름 / 3. 담당업무/ 4. 급여를 출력하라.
+SELECT
+	EMPLOYEE_ID AS "사원번호",
+	FIRST_NAME || ' ' || LAST_NAME AS "이름",
+	JOB_ID AS "담당업무",
+	SALARY AS "급여"
+FROM EMPLOYEES
+WHERE SALARY > (SELECT SALARY
+				FROM EMPLOYEES
+				WHERE LAST_NAME = 'Kochhar');
 
 
 
