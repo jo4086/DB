@@ -5,7 +5,7 @@ select empno, ename, sal from emp;
 select empno as "사원번호" , ename as "사원이름" , sal as "월급" , sal*12 as "연봉" from emp;
 
 --문제3. employees 테이블에서 모든 종업원의 급여를 $300증가 
---시키기 위해서 덧셈 연산자를 사용하고 결과에 이름과 SALARY, SALARY+300를 출력 합니다.
+--시키기 위해서 덧셈 연산자를 사용하고 결   QWDE과에 이름과 SALARY, SALARY+300를 출력 합니다.
 select last_name || first_name, salary, salary+300 from employees;
 
 --문제4. EMPLOYEES 테이블에서 이름(last_name + first_name)과 연봉을 "KING: 1 Year salary = 60000" 형식으로 출력하여라. 
